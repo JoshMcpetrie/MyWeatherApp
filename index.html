@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>My Weather App</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/weather.js"></script>
+
+</head>
+<body>
+	<div>
+		<h1>Weather App</h1>
+	</div>
+
+	<div>		
+		<select name="cities" id="cities">	
+			<option value="default" selected disabled hidden>Select a city</option>		
+  			<option value="Cape Town">Cape Town</option>
+  			<option value="Johannesburg">Johannesburg</option>
+  			<option value="Durban">Durban</option>
+  			<option value="London">London</option>
+  			<option value="Paris">Paris</option>
+  			<option value="New York City">New York City</option>
+  			<option value="Tokyo">Tokyo</option>
+  			<option value="Hong Kong">Hong Kong</option>
+  			<option value="Singapore">Singapore</option>
+  			<option value="Sydney">Sydney</option>
+		</select>		
+  	</div>
+
+	<div><span id="error"></span></div>
+	
+	<div>
+<!-- 		Search for a City: <input type="text" id="search" value="" />
+    	<p>
+       		<input type="button" id="bt" value="Initiate Search" onclick="changeHeader()" />
+    	</p> -->
+
+  		<img src="images/cloud9.jpg">
+  		<h2 id="city">City</h2>
+  		<h4 class=label id="temp">Temp</h4>
+  		<h4 class=label id="min">Temp min</h4>
+  		<h4 class=label id="max">Temp max</h4>
+  		<h4 class=label id="desc">Desc</h4>  	
+	</div>
+</body>
+</html>
