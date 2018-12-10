@@ -12,36 +12,38 @@
 		<h1>Weather App</h1>
 	</div>
 
-	<div>		
+	<!-- City select dropdown -->
+	<div id=select>		
 		<select name="cities" id="cities">	
 			<option value="default" selected disabled hidden>Select a city</option>		
   			<option value="Cape Town">Cape Town</option>
   			<option value="Johannesburg">Johannesburg</option>
-  			<option value="Durban">Durban</option>
+  			<option value="Berlin">Berlin</option>
   			<option value="London">London</option>
   			<option value="Paris">Paris</option>
-  			<option value="New York City">New York City</option>
+  			<option value="New York">New York</option>
   			<option value="Tokyo">Tokyo</option>
   			<option value="Hong Kong">Hong Kong</option>
   			<option value="Singapore">Singapore</option>
   			<option value="Sydney">Sydney</option>
 		</select>		
   	</div>
-
-	<div><span id="error"></span></div>
 	
-	<div>
+	<!-- Weather data box -->
+	<div id="info">
 <!-- 		Search for a City: <input type="text" id="search" value="" />
     	<p>
        		<input type="button" id="bt" value="Initiate Search" onclick="changeHeader()" />
     	</p> -->
 
-  		<img src="images/cloud9.jpg">
   		<h2 id="city">City</h2>
-  		<h4 class=label id="temp">Temp</h4>
-  		<h4 class=label id="min">Temp min</h4>
-  		<h4 class=label id="max">Temp max</h4>
-  		<h4 class=label id="desc">Desc</h4>  	
+  		<h4>Temperature: <label class=label id="temp"></label> &#8451</h4>
+  		<h4>Low: <label class=label id="min"></label> &#8451</h4>
+  		<h4>High: <label class=label id="max"></label> &#8451</h4>	
+  		<h4>Humidity: <label class=label id="humidity"></label>%</h4>
+  		<h4>Wind speed: <label class=label id="speed"></label> km/h</h4>
+		<label class=label id="desc"></label>  
+  		<img id="icon" src="" alt="">
 	</div>
 </body>
 </html>
